@@ -1,19 +1,25 @@
-import React from 'react'
-import { Box } from "@mui/material";
-import '../../App.css'
+import { Card, CardContent, Typography, Box } from '@mui/material';
 
-const index = () => {
+const BookingCard = ({ title, icon, count, description }) => {
   return (
+    <Card>
+      <CardContent>
+        <Box sx={{ display: 'flex' }}>
+          <Box sx={{ marginRight: 2, alignItems: 'center' }}>
+            {icon}
+          </Box>
 
-      
-<Box >
+          <Box sx={{ marginLeft: 30 }}>
+            <Typography variant="subtitle1">{title}</Typography>
+            <Typography variant="h5">{count}</Typography>
+          </Box>
+        </Box>
 
-<h1>hello</h1>
-</Box>
+        <hr />
+        <Typography variant="p">{description}</Typography>
+      </CardContent>
+    </Card>
+  );
+};
 
-
-   
-  )
-}
-
-export default index
+export default BookingCard;
