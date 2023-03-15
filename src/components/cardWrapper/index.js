@@ -8,7 +8,7 @@ const index = () => {
   return (
 
 
-    <Box sx={{ borderRadius: 2}}>
+    <Box sx={{ borderRadius: 2,width: { xs: '100%', md: '50%' }}}>
   
     <Card>
    
