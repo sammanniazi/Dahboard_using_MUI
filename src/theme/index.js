@@ -5,7 +5,7 @@ import { createTheme } from "@mui/material";
 export  const theme = createTheme({
   palette:{
     primary:{
-      main: "rgba(255, 255, 255, 0.8)",
+      main: "#f5f5f5",
   
     },
     secondary:{

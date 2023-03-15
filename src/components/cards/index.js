@@ -3,8 +3,8 @@ import { Card, CardContent, Typography, Box } from '@mui/material';
 const BookingCard = ({ title, icon, count, description }) => {
   return (
     <Card>
-      <CardContent>
-        <Box sx={{ display: 'flex' }}>
+      <CardContent sx={{ height: '100%' }}>
+        <Box sx={{ display: 'flex', height: '50%', alignItems: 'center', justifyContent: 'center' }}>
           <Box sx={{ marginRight: 2, alignItems: 'center' }}>
             {icon}
           </Box>
