@@ -17,7 +17,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Toolbar from '@mui/material/Toolbar';
-
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 250;
 
@@ -41,30 +41,116 @@ export default function ResponsiveDrawer(props: Props) {
       <Toolbar />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon style={{ color: 'white' }} /> : <MailIcon style={{ color: 'white' }} />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+      <ListItem>
+      <ListItemButton Link to="/">
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"DashBoard"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
       </List>
-      <Divider />
+
       <List>
-        {['All mail', 'Trash', 'Spam','Notification','RTL','signin','signup'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon style={{ color: 'white' }} /> : <MailIcon style={{ color: 'white' }} />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+      <ListItem>
+      <ListItemButton Link to="/table">
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"Table"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
       </List>
+
+      <List>
+      <ListItem>
+      <ListItemButton>
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"Billing"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
+      </List>
+      <List>
+      <ListItem>
+      <ListItemButton>
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"RTL"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
+      </List>
+      <List>
+      <ListItem>
+      <ListItemButton>
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"Notification"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
+      </List>
+      
+      <List>
+      <ListItem>
+      <ListItemButton>
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"Signin"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
+      </List>
+      <List>
+      <ListItem>
+      <ListItemButton>
+      <ListItemIcon>
+      <InboxIcon style={{ color: 'white' }} />
+
+      </ListItemIcon>
+      <ListItemText primary={"SignUp"} />
+
+      </ListItemButton>
+
+
+
+      </ListItem>
+      </List>
+
+      <Divider />
+      
 
       <Divider />
 
