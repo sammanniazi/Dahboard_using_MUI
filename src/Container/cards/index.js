@@ -7,22 +7,23 @@ const card = () => {
   return (
     <>
       <BookingCard
-        title="Card 1"
+        title="Booking"
         icon={< AccountBalanceRoundedIcon />}
-        count={5}
-        description="ABCD"
+        count={281}
+        description="+55% than lask week"
       />
       <BookingCard
-        title="Card 2"
+        title="Today's Users"
         icon={<AccessTimeFilledRoundedIcon/>}
-        count={10}
-        description="EFGH"
+        count={2,300}
+        description="+3%
+ than last month"
       />
       <BookingCard
-        title="Card 3"
+        title="Followers"
         icon={< AccountCircleRoundedIcon/>}
-        count={15}
-        description="IJKL"
+        count={+91}
+        description=" Just updated"
       />
       
     </>
