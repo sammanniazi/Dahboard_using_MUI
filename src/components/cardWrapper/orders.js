@@ -6,9 +6,8 @@ import  OrderList  from '../orders/index'
 
 const index = () => {
   return (
-    <div>
 
-    <Box sx={{ borderRadius: 2 }}>
+    <Box sx={{ borderRadius: 2 ,width: { xs: '100%', md: '50%' }}}>
   
     <Card>
     <h4>Orders Review</h4>
@@ -25,7 +24,6 @@ const index = () => {
 
     </Box>
       
-    </div>
   )
 }
 
