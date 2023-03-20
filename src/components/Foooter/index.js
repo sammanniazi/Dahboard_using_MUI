@@ -1,5 +1,5 @@
 import React from 'react';
-import { BottomNavigation, BottomNavigationAction } from '@mui/material';
+import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import { Facebook, Twitter, Instagram, LinkedIn } from '@mui/icons-material';
 
 const Footer = () => {
@@ -44,11 +44,11 @@ const Footer = () => {
   return (
     <>
     <BottomNavigation style={footerStyle}>
-      <div style={leftSectionStyle}>
+      <Box style={leftSectionStyle}>
         <span>
           © 2023, made with by Creative Tim for a better web.
         </span>
-      </div>
+      </Box>
       
     </BottomNavigation>
 

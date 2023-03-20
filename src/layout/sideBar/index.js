@@ -13,11 +13,11 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
+
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Toolbar from '@mui/material/Toolbar';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const drawerWidth = 250;
 
@@ -63,7 +63,7 @@ export default function ResponsiveDrawer(props: Props) {
       <InboxIcon style={{ color: 'white' }} />
 
       </ListItemIcon>
-      <ListItemText primary={"Table"} />
+      <ListItemText primary={"Clients"} />
 
       </ListItemButton>
 
@@ -104,12 +104,12 @@ export default function ResponsiveDrawer(props: Props) {
       </List>
       <List>
       <ListItem>
-      <ListItemButton>
+      <ListItemButton Link to="/profile">
       <ListItemIcon>
       <InboxIcon style={{ color: 'white' }} />
 
       </ListItemIcon>
-      <ListItemText primary={"Notification"} />
+      <ListItemText primary={"Profile"} />
 
       </ListItemButton>
 
@@ -120,7 +120,7 @@ export default function ResponsiveDrawer(props: Props) {
       
       <List>
       <ListItem>
-      <ListItemButton>
+      <ListItemButton Link to="/signin">
       <ListItemIcon>
       <InboxIcon style={{ color: 'white' }} />
 
@@ -135,7 +135,7 @@ export default function ResponsiveDrawer(props: Props) {
       </List>
       <List>
       <ListItem>
-      <ListItemButton>
+      <ListItemButton Link to="/signup">
       <ListItemIcon>
       <InboxIcon style={{ color: 'white' }} />
 

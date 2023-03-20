@@ -1,22 +1,22 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import { Card, CardContent } from "@mui/material";
-import  Table from '../Table/index'
+//import  OrderList  from '../orders/index'
 
-//import App from '../../Container/statisticCards/completeTask';
-
+import Form from '../../layout/Forms/signin'
+;
 
 const index = () => {
   return (
 
-
-    <Box sx={{ borderRadius: 2,width: { xs: '100%', md: '100%' }}}>
+    <Box sx={{ borderRadius: 2 ,width: { xs: '100%', md: '50%' }}}>
   
     <Card>
+  
    
-    <CardContent >
-   
-<Table/>
+    <CardContent>
+    
+<Form />
 
     </CardContent>
 
@@ -26,7 +26,6 @@ const index = () => {
 
     </Box>
       
-  
   )
 }
 

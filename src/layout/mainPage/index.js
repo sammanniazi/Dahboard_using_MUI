@@ -28,6 +28,7 @@ function Mainpage() {
   <Box sx={{ display: 'flex', flexWrap: 'nowrap', gap: '16px', marginTop: '30px' }}>
     <StaticCard sx={{ minWidth: '300px', flexGrow: 1 }} />
     <LinechartCard sx={{ minWidth: '300px', flexGrow: 1 }} />
+
     <CompleteTask sx={{ minWidth: '300px', flexGrow: 1 }} />
   </Box>
 </Grid>
