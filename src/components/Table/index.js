@@ -27,36 +27,35 @@ function BasicTable() {
   return (
     <TableContainer>
       <Table  >
-        <TableHead style={{ paddingBottom: '30px' }}>
-          <TableRow>
-            <TableCell align="right" >Companies</TableCell>
-            <TableCell align="right" >Members</TableCell>
-            <TableCell align="right" >Budget</TableCell>
-            <TableCell align="right">Completion</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.id} onClick={() => handleRowClick(row)} selected={selectedRow === row.id} 
-       >
-              <TableCell align="right" >
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-    <img src={row.company.logo} alt={row.company.name} width="25" height="25" style={{ marginRight: '10px' }} />
-    <span>{row.company.name}</span>
-  </div>
-              </TableCell>
-              <TableCell width={'200px'} >
-                {row.members.map((member) => (
-                  <img key={member} src={User } alt={member} width="20" height="20" />
-                ))}
-              </TableCell>
-              <TableCell width={'200px'}>{`$${row.budget.toLocaleString()}`}</TableCell>
-              <TableCell width={'200px'} >
-                <div style={{ backgroundColor: 'lightblue', width: `${row.completion}%`, height: '10px' }}></div>
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
+      <TableHead style={{ paddingBottom: '30px' }}>
+  <TableRow>
+    <TableCell align="left">Companies</TableCell>
+    <TableCell align="left">Members</TableCell>
+    <TableCell align="right">Budget</TableCell>
+    <TableCell align="right">Completion</TableCell>
+  </TableRow>
+</TableHead>
+<TableBody>
+  {rows.map((row) => (
+    <TableRow key={row.id} onClick={() => handleRowClick(row)} selected={selectedRow === row.id}>
+      <TableCell align="left">
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={row.company.logo} alt={row.company.name} width="25" height="25" style={{ marginRight: '10px' }} />
+          <span>{row.company.name}</span>
+        </div>
+      </TableCell>
+      <TableCell align="left">
+        {row.members.map((member) => (
+          <img key={member} src={User} alt={member} width="20" height="20" style={{ marginRight: '5px' }} />
+        ))}
+      </TableCell>
+      <TableCell align="right" width={'150px'}>{`$${row.budget.toLocaleString()}`}</TableCell>
+      <TableCell align="right" width={'150px'}>
+        <div style={{ backgroundColor: 'lightblue', width: `${row.completion}%`, height: '10px' }}></div>
+      </TableCell>
+    </TableRow>
+  ))}
+</TableBody>
       </Table>
     </TableContainer>
   );

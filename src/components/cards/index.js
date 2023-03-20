@@ -1,24 +1,39 @@
 import { Card, CardContent, Typography, Box } from '@mui/material';
+import { bgcolor, width } from '@mui/system';
+
+
 
 const BookingCard = ({ title, icon, count, description }) => {
   return (
-    <Card>
-      <CardContent sx={{ height: '100%' }}>
-        <Box sx={{ display: 'flex', height: '50%', alignItems: 'center', justifyContent: 'center' }}>
-          <Box sx={{ marginRight: 2, alignItems: 'center' }}>
+    
+<Card  sx={{width:'250px',}}>
+
+
+      <CardContent>
+      <Box display='flex' flexDirection='column'>
+        <Box display='flex' flexDirection='row' justifyContent='space-between'>
+          <Box >
             {icon}
           </Box>
 
-          <Box sx={{ marginLeft: 30 }}>
-            <Typography variant="subtitle1">{title}</Typography>
-            <Typography variant="h5">{count}</Typography>
+          <Box display='flex' flexDirection='column'>
+           <Box>
+           <Typography variant="subtitle1">{title}</Typography>
+           </Box> 
+           <Box>
+           <Typography variant="h5">{count}</Typography>
+           </Box> 
           </Box>
         </Box>
-
-        <hr />
+        <Box><hr /></Box>
+        <Box>
         <Typography variant="p">{description}</Typography>
+        </Box>
+        </Box>
       </CardContent>
-    </Card>
+</Card>
+  
+ 
   );
 };
 
